@@ -47,6 +47,14 @@
          
     </script>
     
+    <style>
+        #map {
+            height: 400px;
+            width: 40%;
+            background-color: grey;
+        }
+    </style>
+    
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -232,32 +240,40 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
+                    </br><hr>
                     <h1>Contact </h1>
+                    ETH Zurich (Swiss Federal Institute of Technology Zurich)<br>
+                    Department of Computer Science<br>
+                    Distributed Systems Group<br>
+                    Universitaetstrasse 6<br>
+                    CH-8092 Zurich, Switzerland<br>
+                    <br>
                     
-                    </pr>
-                    </br>
-                    </br>
-                    </br>
-                    </br>
-                    </pr>
-                    </br>
-                    </br>
-                    </br>
-                    </br>
-                    </pr>
-                    </br>
-                    </br>
-                    </br>
-                    </br>
-                    </pr>
-                    </br>
-                    </br>
-                    </br>
+                    <div id="map"></div>
+                    <script>
+                        function initMap() {
+                            var uluru = {lat: 47.378318, lng: 8.550828};
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                                          zoom: 12,
+                                                          center: uluru
+                                                          });
+                                                          var marker = new google.maps.Marker({
+                                                                                              position: uluru,
+                                                                                              map: map
+                                                                                              });
+                        }
+                    </script>
+                    <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9sNVNisgZMsfsiPNJBqACCeqwIpN4wbA&callback=initMap">
+                    </script>
                     </br>
                 </div>
             </div>
         </div>
     </section>
+
+
+
 
 
 
