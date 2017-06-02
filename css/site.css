@@ -26,3 +26,31 @@
     margin:0px;
     border-bottom:1px solid #eee;
 }
+
+
+
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    background:
+    linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)
+    ),
+    url(../images/blue-splitter.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.slogan {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
